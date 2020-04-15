@@ -7,17 +7,18 @@ import sar2x.codetiger.pmg.init.ModItems;
 import sar2x.codetiger.pmg.util.IHasModel;
 
 public class ItemBase extends Item implements IHasModel {
-	
+
 	public ItemBase(String name) {
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.COMBAT);
-		
+
 		ModItems.ITEMS.add(this);
 	}
+
 	@Override
 	public void registerModels() {
-		Main.proxy.registerItemRenderer(this,0,"inventory");
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 
 }

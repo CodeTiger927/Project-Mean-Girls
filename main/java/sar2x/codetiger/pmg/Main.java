@@ -10,28 +10,27 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import sar2x.codetiger.pmg.proxy.CommonProxy;
 import sar2x.codetiger.pmg.util.*;
 
-@Mod(modid = Reference.MOD_ID,name = Reference.NAME,version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 
 public class Main {
 	@Instance
 	public static Main instance;
-	
-	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS,serverSide = Reference.COMMON_PROXY_CLASS)
+
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
 	public static CommonProxy proxy;
-	
-	
+
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
-		
+
 	}
-	
+
 	@EventHandler
 	public static void Init(FMLInitializationEvent event) {
-		
+
 	}
-	
+
 	@EventHandler
 	public static void PostInit(FMLPostInitializationEvent event) {
-		
+
 	}
 }
