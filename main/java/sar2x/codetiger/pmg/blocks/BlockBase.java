@@ -25,4 +25,3 @@ public class BlockBase extends Block implements IHasModel {
 		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"normal");	
 	}
 }
-
