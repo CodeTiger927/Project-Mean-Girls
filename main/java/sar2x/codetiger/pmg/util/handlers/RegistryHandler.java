@@ -26,6 +26,7 @@ public class RegistryHandler {
 			if(item instanceof IHasModel) {
 				((IHasModel)item).registerModels();
 			}
+		}
 		for(Block block: ModBlocks.BLOCKS) {
 			if(block instanceof IHasModel) {
 				((IHasModel)block).registerModels();
