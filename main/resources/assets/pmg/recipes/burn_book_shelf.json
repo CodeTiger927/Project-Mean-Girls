@@ -3,9 +3,9 @@
    
     "pattern":
     [
-        "RBR",
-        "RBR",
-        "RBR"
+        "RRR",
+        "BBB",
+        "RRR"
     ],
    
     "key":
