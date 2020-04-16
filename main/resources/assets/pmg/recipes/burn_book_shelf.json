@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RBR",
+        "RBR",
+        "RBR"
+    ],
+   
+    "key":
+    {
+        "R":
+        [
+            {
+                "item": "minecraft:planks",
+                "data": 0
+            },
+             
+            {
+                "item": "minecraft:planks",
+                "data": 1
+            },
+            
+            {
+                "item": "minecraft:planks",
+                "data": 2
+            },
+            
+            {
+                "item": "minecraft:planks",
+                "data": 3
+            },
+            
+            {
+                "item": "minecraft:planks",
+                "data": 4
+            },
+            
+            {
+                "item": "minecraft:planks",
+                "data": 5
+            }
+        ],
+        
+        "B":
+        {
+            "item": "pmg:burn_book"
+        }
+    },
+   
+    "result":
+    {
+        "item": "pmg:burn_book_shelf",
+        "count": 1
+    }
+}
