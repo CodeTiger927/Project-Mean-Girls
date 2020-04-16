@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import sar2x.codetiger.pmg.proxy.CommonProxy;
 import sar2x.codetiger.pmg.util.*;
-
+import sar2x.codetiger.pmg.init.ModRecipes;
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 
 public class Main {
@@ -26,7 +26,7 @@ public class Main {
 
 	@EventHandler
 	public static void Init(FMLInitializationEvent event) {
-
+		ModRecipes.init();
 	}
 
 	@EventHandler
