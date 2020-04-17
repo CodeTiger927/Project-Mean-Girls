@@ -10,5 +10,5 @@ import sar2x.codetiger.pmg.blocks.burn_book_shelf;
 
 public class ModBlocks {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
-	public static final Block BURN_BOOK_SHELF = new burn_book_shelf("burn_book_shelf", Material.WOOD);
+	public static final Block BURN_BOOK_SHELF = new burn_book_shelf("burn_book_shelf", Material.ROCK);
 }
