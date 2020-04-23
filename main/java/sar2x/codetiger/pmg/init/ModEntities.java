@@ -5,11 +5,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import sar2x.codetiger.pmg.Main;
 import sar2x.codetiger.pmg.entities.EntityCentaur;
+import sar2x.codetiger.pmg.entities.EntityRegina;
 import sar2x.codetiger.pmg.util.Reference;
 
 public class ModEntities {
 	public static void registerEntities() {
 		registerEntity("centaur",EntityCentaur.class,Reference.ENTITY_CENTAUR,50,11437146,000000);
+		registerEntity("regina",EntityRegina.class,Reference.ENTITY_REGINA,50,16761035,16777215);
+		
 	}
 	
 	private static void registerEntity(String name,Class<? extends Entity> entity,int id,int range,int color1,int color2) {

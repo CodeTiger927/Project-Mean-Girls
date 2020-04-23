@@ -11,4 +11,5 @@ public class Reference {
 	///public static final int (Entity) = (number); 
 	
 	public static final int ENTITY_CENTAUR = 120;
+	public static final int ENTITY_REGINA = 121;
 }
