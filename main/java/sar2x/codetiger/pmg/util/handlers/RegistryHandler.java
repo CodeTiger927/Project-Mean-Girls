@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import sar2x.codetiger.pmg.init.ModBlocks;
 import sar2x.codetiger.pmg.init.ModItems;
 import sar2x.codetiger.pmg.util.IHasModel;
+import sar2x.codetiger.pmg.init.ModEntities;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -34,5 +35,8 @@ public class RegistryHandler {
 				((IHasModel) block).registerModels();
 			}
 		}
+	}
+	public static void preInitRegistry() {
+		///ModEntities.registerEntities();
 	}
 }
