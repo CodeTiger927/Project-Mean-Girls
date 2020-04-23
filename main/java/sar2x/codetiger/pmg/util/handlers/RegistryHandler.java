@@ -6,10 +6,11 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import sar2x.codetiger.pmg.entities.render.RenderHandler;
 import sar2x.codetiger.pmg.init.ModBlocks;
+import sar2x.codetiger.pmg.init.ModEntities;
 import sar2x.codetiger.pmg.init.ModItems;
 import sar2x.codetiger.pmg.util.IHasModel;
-import sar2x.codetiger.pmg.init.ModEntities;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -36,7 +37,10 @@ public class RegistryHandler {
 			}
 		}
 	}
-	public static void preInitRegistry() {
-		///ModEntities.registerEntities();
+	
+	
+	public static void preInitRegistries() {
+		ModEntities.registerEntities();
+		RenderHandler.registerEntityRenders();
 	}
 }

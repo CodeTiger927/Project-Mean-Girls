@@ -13,5 +13,5 @@ public class ModItems {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 
 	public static final Item BURN_BOOK = new burn_book("burn_book");
-	public static final Item SILVER_TOUNGUE = new silver_toungue("silver_toungue");
+	//public static final Item SILVER_TOUNGUE = new silver_toungue("silver_toungue");
 }

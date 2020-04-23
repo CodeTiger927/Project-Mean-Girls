@@ -9,4 +9,6 @@ public class Reference {
 	public static final String CLIENT_PROXY_CLASS = "sar2x.codetiger.pmg.proxy.ClientProxy";
 	public static final String COMMON_PROXY_CLASS = "sar2x.codetiger.pmg.proxy.CommonProxy";
 	///public static final int (Entity) = (number); 
+	
+	public static final int ENTITY_CENTAUR = 120;
 }
