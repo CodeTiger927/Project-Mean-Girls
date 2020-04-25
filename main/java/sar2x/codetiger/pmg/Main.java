@@ -22,16 +22,18 @@ public class Main {
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
-		RegistryHandler.preInitRegistries();
+		//RegistryHandler.preInitRegistries();
+		proxy.preInit();
 	}
 
 	@EventHandler
 	public static void Init(FMLInitializationEvent event) {
-		ModRecipes.init();
+		//ModRecipes.init();
+		proxy.init();
 	}
 
 	@EventHandler
 	public static void PostInit(FMLPostInitializationEvent event) {
-
+		proxy.postInit();
 	}
 }
