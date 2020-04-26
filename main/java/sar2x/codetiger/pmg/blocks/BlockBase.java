@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 import sar2x.codetiger.pmg.Main;
 import sar2x.codetiger.pmg.init.ModBlocks;
 import sar2x.codetiger.pmg.init.ModItems;
-import sar2x.codetiger.pmg.util.IHasModel;
+import sar2x.codetiger.pmg.util.interfaces.IHasModel;
 
 public class BlockBase extends Block implements IHasModel {
 	public BlockBase(String name, Material material) {

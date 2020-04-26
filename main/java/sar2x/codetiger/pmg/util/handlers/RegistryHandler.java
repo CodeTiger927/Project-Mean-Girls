@@ -6,11 +6,13 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import sar2x.codetiger.pmg.entities.render.RenderHandler;
 import sar2x.codetiger.pmg.init.ModBlocks;
 import sar2x.codetiger.pmg.init.ModEntities;
 import sar2x.codetiger.pmg.init.ModItems;
-import sar2x.codetiger.pmg.util.IHasModel;
+import sar2x.codetiger.pmg.util.interfaces.IHasModel;
+import sar2x.codetiger.pmg.world.gen.WorldGenCustomStructures;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -40,7 +42,10 @@ public class RegistryHandler {
 	
 	
 	public static void preInitRegistries() {
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(),0);
+		
 		ModEntities.registerEntities();
 		RenderHandler.registerEntityRenders();
+		
 	}
 }
